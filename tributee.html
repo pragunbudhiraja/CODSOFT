@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to MS DHONI</title>
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tribute-text h2 {
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tribute to MS DHONI</h1>
+    </header>
+
+    <section class="main-content">
+        <div class="image-container">
+            <img src="C:\Users\PRAGUN\OneDrive\Documents\certificate\CodSoft\images\dhoni.jpg" alt="MS Dhoni">
+        </div>
+        <div class="tribute-text">
+            <h2>Biography</h2>
+            <p>
+                MSD is a former Indian cricketer who played as a wicket-keeper-batsman. Widely regarded as one of the greatest captain of all time, he is known for his explosive batting, wicket-keeping and leadership skills. He was the captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He currently plays for and captains Chennai Super Kings in the Indian Premier League.
+            </p>
+            <h2>Legacy</h2>
+            <p>
+               Dhoni's exceptional leadership skills have helped the Indian cricket team achieve unprecedented success on the global stage, including leading India to victory in the 2007 T20 World Cup, winning the 2011 ODI World Cup, becoming the most successful captain in Indian cricket history, and being a part of the Indian team
+            </p>
+            <h3>Retirement</h3>
+            <p>
+                Dhoni announced his retirement from international cricket on 15 August 2020. The decision came as a surprise to many fans and cricket experts, as Dhoni had not announced any plans to retire before that. He had not played any international cricket since India's loss in the 2019 Cricket World Cup semi-final. He also had not announced any plans to retire from domestic cricket, and continues to play for the Chennai Super Kings in the Indian Premier League.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Tribute Page</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('header');
+    
+    header.addEventListener('click', function () {
+        header.style.backgroundColor = getRandomColor();
+    });
+
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+});
+
+    </script>
+</body>
+</html>
